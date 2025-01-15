@@ -1,0 +1,39 @@
+@use "../variables.scss" as var;
+
+.hamburger {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+
+  @media (max-width: var.$breakpoint-small) {
+    right: 12px;
+  }
+}
+
+.hamburger__icon {
+  position: relative;
+  display: block;
+  width: 36px;
+  height: 2px;
+  background: var.$color-black;
+  cursor: pointer;
+}
+
+.hamburger__icon:before,
+.hamburger__icon:after {
+  content: "";
+  width: 30px;
+  height: 3px;
+  position: absolute;
+  right: 0;
+  background: var.$color-black;
+}
+.hamburger__icon:before {
+  top: -8px;
+}
+.hamburger__icon:after {
+  top: 8px;
+}

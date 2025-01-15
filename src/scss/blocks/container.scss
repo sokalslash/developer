@@ -1,0 +1,15 @@
+@use "../variables.scss" as var;
+
+.container {
+  max-width: 1140px;
+  min-height: 100%;
+  margin: 0 auto;
+  border-left: var.$border;
+  border-right: var.$border;
+
+  @media (max-width: var.$breakpoint-large-x) {
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+  }
+}

@@ -1,0 +1,53 @@
+@use "../variables.scss" as var;
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  transform: rotate(180deg);
+
+  @media (max-width: var.$breakpoint-large-x) {
+    display: none;
+  }
+}
+
+.social-links__list {
+  display: flex;
+  gap: 15px;
+  transform: rotate(180deg);
+}
+
+.social-links__text {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 70px;
+    background-color: var.$color-black;
+  }
+}
+
+.social-links__link {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+
+  &--github {
+    background-image: url("./src/images/github-vertical.svg");
+  }
+  &--instagram {
+    background-image: url("./src/images/instagram-vertical.svg");
+  }
+  &--facebook {
+    background-image: url("./src/images/facebook-vertical.svg");
+  }
+}

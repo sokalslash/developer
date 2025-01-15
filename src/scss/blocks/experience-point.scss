@@ -1,0 +1,108 @@
+@use "../variables.scss" as var;
+
+.experience-point {
+  position: relative;
+  padding: 0 43px;
+  border-left: var.$border;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0;
+    left: -8px;
+    border-radius: 50%;
+    background-color: var.$color-accent;
+  }
+
+  @media (max-width: var.$breakpoint-small) {
+    padding-right: 0;
+  }
+}
+
+.experience-point__heading {
+  font-size: 20px;
+  margin-top: -1px;
+  margin-bottom: 45px;
+
+}
+
+.experience-point__subheading {
+  margin: 0;
+}
+
+.experience-point__text {
+  margin: 12px 0 0;
+}
+
+.experience-point__list {
+  display: grid;
+  gap: 45px;
+
+  @media (max-width: var.$breakpoint-small) {
+    gap: 10px;
+  }
+}
+
+.experience-point__item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  column-gap: 10px;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var.$color-accent;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.experience-point__item--university {
+  &::after {
+    background-image: url("./src/images/university-icon.svg");
+  }
+}
+.experience-point__item--courses {
+  &::after {
+    background-image: url("./src/images/courses-icon.svg");
+  }
+}
+.experience-point__item--developer {
+  &::after {
+    background-image: url("./src/images/developer-icon.svg");
+  }
+}
+.experience-point__item--designer {
+  &::after {
+    background-image: url("./src/images/designer-icon.svg");
+  }
+}
+
+.experience-point__decor {
+  position: absolute;
+  display: inline-block;
+  top: 17px;
+  left: -43px;
+  width: 43px;
+  height: 1px;
+  background-color: var.$color-black;
+}
+
+.section__text {
+  grid-column: 1/3;
+}

@@ -1,0 +1,76 @@
+@use "../variables.scss" as var;
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 345px;
+  padding: 17px 24px 50px 40px;
+  font-size: 24px;
+  background-color: var.$color-accent;
+
+  @media (max-width: var.$breakpoint-small) {
+    max-width: 250px;
+    padding-left: 20px;
+  }
+}
+
+.nav__close-button {
+  margin-left: auto;
+  margin-bottom: 87px;
+}
+
+.nav__item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 24px;
+  line-height: 1.5;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: var.$border;
+    border-radius: 50%;
+  }
+}
+
+.nav__link {
+  color: var.$color-white;
+}
+
+.nav__social-list {
+  display: flex;
+  width: 90px;
+  height: 20px;
+  gap: 15px;
+  align-self: center;
+  margin-top: auto;
+  margin-left: -15px;
+}
+
+.nav__social-link {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+
+  &--github {
+    background-image: url("./src/images/github-horiz.svg");
+  }
+  &--instagram {
+    background-image: url("./src/images/instagram-horiz.svg");
+  }
+  &--facebook {
+    background-image: url("./src/images/facebook-horiz.svg");
+  }
+}

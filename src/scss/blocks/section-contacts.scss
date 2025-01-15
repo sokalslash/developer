@@ -1,0 +1,92 @@
+@use "../variables.scss" as var;
+
+.section-contacts {
+  .container {
+    border-bottom: var.$border;
+
+    @media (max-width: var.$breakpoint-large-x) {
+      border-bottom: none;
+    }
+  }
+}
+
+.section-contacts__wrapper {
+  display: flex;
+  padding: 120px 35px 91px 52px;
+  gap: 68px;
+
+  @media (max-width: var.$breakpoint-small) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.section-contacts__img {
+  width: 400px;
+  height: 600px;
+
+  img {
+    vertical-align: middle;
+  }
+
+  @media (max-width: var.$breakpoint-medium) {
+    display: none;
+  }
+}
+
+.section-contacts__inner {
+  flex-grow: 1;
+}
+
+.section-contacts__subtitle {
+  margin: 8px 0 8px 10px;
+
+  @media (max-width: var.$breakpoint-small) {
+    margin-bottom: 25px;;
+  }
+}
+
+.section-contacts__title {
+  padding-bottom: 4px;
+  margin-bottom: 20px;
+  text-align: start;
+
+  &::after {
+    left: 0;
+    transform: none;
+  }
+
+  @media (max-width: var.$breakpoint-small) {
+    padding-bottom: 14px;;
+  }
+}
+
+.section-contacts__text {
+  margin: 0 0 26px;
+}
+
+.section-contacts__links-list {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 22px;
+}
+
+.section-contacts__link {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+
+  &--facebook {
+    background-image: url("./src/images/facebook-horiz.svg");
+  }
+  &--telegram {
+    background-image: url("./src/images/telegram.svg");
+  }
+  &--instagram {
+    background-image: url("./src/images/instagram-horiz.svg");
+  }
+}

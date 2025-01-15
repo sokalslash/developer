@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-разработчик</title>
+  </head>
+  <body>
+    <header class="header">
+      <button class="header__hamburger hamburger">
+        <span class="hamburger__icon">
+          <span class="visually-hidden">Открыть меню</span>
+        </span>
+      </button>
+
+      <div class="header__social-links social-links">
+        <span class="social-links__text">Социальные сети</span>
+        <ul class="social-links__list">
+          <li>
+            <a
+              class="social-links__link social-links__link--facebook"
+              href="https://www.facebook.com"
+              target="_blank"
+            >
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="social-links__link social-links__link--instagram"
+              href="https://www.instagram.com"
+              target="_blank"
+            >
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="social-links__link social-links__link--github"
+              href="https://github.com"
+              target="_blank"
+            >
+              <span class="visually-hidden">Github</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__nav-overlay">
+        <nav class="nav">
+          <button class="nav__close-button close-button">
+            <span class="visually-hidden">Закрыть меню</span>
+          </button>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link">ПРО МЕНЯ</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#experience">МОЙ ОПЫТ</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link">МОИ НАВЫКИ</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link">МОИ РАБОТЫ</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link">ПРАЙС-ЛИСТ</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#contacts">КОНТАКТЫ</a>
+            </li>
+          </ul>
+
+          <ul class="nav__social-list">
+            <li>
+              <a
+                class="nav__social-link nav__social-link--github"
+                href="https://github.com"
+                target="_blank"
+              >
+                <span class="visually-hidden">Github</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="nav__social-link nav__social-link--instagram"
+                href="https://www.instagram.com"
+                target="_blank"
+              >
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="nav__social-link nav__social-link--facebook"
+                href="https://www.facebook.com"
+                target="_blank"
+              >
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="container">
+        <div class="header__inner">
+          <p class="header__text accent-decor">
+            <span>Меня зовут Александра Смит</span>
+          </p>
+
+          <h1 class="header__title">Я web-разработчик из города Москва</h1>
+
+          <ul class="header__buttons">
+            <li><a class="link-button link-button--accent">Портфолио</a></li>
+            <li><a class="link-button">Про меня</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section-experience" id="experience">
+        <div class="container">
+          <div class="section-experience__wrapper">
+            <h2
+              class="section__subtitle section-experience__subtitle accent-decor"
+            >
+              <span>Опыт</span>
+            </h2>
+            <p class="section__title">Чем я буду полезна</p>
+          </div>
+
+          <div class="section-experience__list">
+            <div class="section-experience__point experience-point">
+              <p class="experience-point__heading">Образование</p>
+              <ul class="experience-point__list">
+                <li
+                  class="experience-point__item experience-point__item--university"
+                >
+                  <span class="experience-point__decor"></span>
+                  <div class="experience-point__inner">
+                    <p
+                      class="section__accent-text experience-point__subheading"
+                    >
+                      МГТУ им. Н. Э. Баумана
+                    </p>
+                    <span class="section__text"
+                      >Диплом магистра | Москва (2014-2020)</span
+                    >
+                  </div>
+                  <p class="section__text experience-point__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmo.
+                  </p>
+                </li>
+
+                <li
+                  class="experience-point__item experience-point__item--courses"
+                >
+                  <span class="experience-point__decor"></span>
+                  <div class="experience-point__inner">
+                    <p
+                      class="section__accent-text experience-point__subheading"
+                    >
+                      Udemy
+                    </p>
+                    <span class="section__text">Курсы по Web-разработке</span>
+                  </div>
+                  <p class="section__text experience-point__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmo.
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="section-experience__point experience-point">
+              <p class="experience-point__heading">Опыт работы</p>
+              <ul class="experience-point__list">
+                <li
+                  class="experience-point__item experience-point__item--developer"
+                >
+                  <span class="experience-point__decor"></span>
+                  <div class="experience-point__inner">
+                    <p
+                      class="section__accent-text experience-point__subheading"
+                    >
+                      Front-End Developer
+                    </p>
+                    <span class="section__text">EPAM | Москва (2018-2019)</span>
+                  </div>
+                  <p class="section__text experience-point__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmo.
+                  </p>
+                </li>
+
+                <li
+                  class="experience-point__item experience-point__item--designer"
+                >
+                  <span class="experience-point__decor"></span>
+                  <div class="experience-point__inner">
+                    <p
+                      class="section__accent-text experience-point__subheading"
+                    >
+                      UI/UX Designer
+                    </p>
+                    <span class="section__text"
+                      >Squad Team | Москва (2018)</span
+                    >
+                  </div>
+                  <p class="section__text experience-point__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmo.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-contacts" id="contacts">
+        <div class="container">
+          <div class="section-contacts__wrapper">
+            <div class="section-contacts__img">
+              <picture>
+                <source
+                  srcset="
+                    ./src/images/photo-contacts.webp,
+                    ./src/images/photo-contacts@2.webp 2x
+                  "
+                  type="image/webp"
+                >
+                <img
+                  width="400"
+                  height="600"
+                  src="src/images/photo-contacts.jpg"
+                  srcset="
+                    src/images/photo-contacts.jpg,
+                    src/images/photo-contacts@2.jpg 2x
+                  "
+                  alt="Веб-разработчик на фоне пальм с стаканом кофе."
+                >
+              </picture>
+            </div>
+
+            <div class="section-contacts__inner">
+              <h2
+                class="section__subtitle section-contacts__subtitle accent-decor"
+              >
+                <span>Контакты</span>
+              </h2>
+              <p class="section__title section-contacts__title">
+                Свяжитесь со мной
+              </p>
+              <p class="section__accent-text section-contacts__text">
+                Любым удобным для вас способом:
+              </p>
+              <ul class="section-contacts__links-list">
+                <li>
+                  <a
+                    class="section-contacts__link section-contacts__link--facebook"
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                  >
+                    <span class="visually-hidden">Facebook</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="section-contacts__link section-contacts__link--telegram"
+                    href="https://t.me"
+                    target="_blank"
+                  >
+                    <span class="visually-hidden">Telegram</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="section-contacts__link section-contacts__link--instagram"
+                    href="https://www.instagram.com"
+                    target="_blank"
+                  >
+                    <span class="visually-hidden">Instagram</span>
+                  </a>
+                </li>
+              </ul>
+              <p class="section__accent-text section-contacts__text">
+                Или оставьте ваши данные и я сама вам напишу:
+              </p>
+              <form
+                class="section-contacts__form form"
+                method="post"
+                action="https://httpbin.org/post"
+              >
+                <fieldset class="form__fieldset">
+                  <div class="form__field">
+                    <label class="form__label section__text" for="name"
+                      >Ваше имя</label
+                    >
+                    <input
+                      class="form__input"
+                      id="name"
+                      type="text"
+                      name="name"
+                      placeholder="Иван"
+                    >
+                    <span class="form__errors" id="name-errors"></span>
+                  </div>
+
+                  <div class="form__field">
+                    <label class="form__label section__text" for="email"
+                      >Ваша почта</label
+                    >
+                    <input
+                      class="form__input"
+                      id="email"
+                      type="email"
+                      name="email"
+                    >
+                    <span class="form__errors" id="email-errors"></span>
+                  </div>
+                </fieldset>
+
+                <div class="form__field">
+                  <label class="form__label section__text" for="message"
+                    >Ваше сообщение</label
+                  >
+                  <textarea
+                    class="form__input form__area"
+                    rows="4"
+                    cols="40"
+                    id="message"
+                    name="message"
+                  ></textarea>
+                  <span class="form__errors" id="message-errors"></span>
+                </div>
+
+                <div class="form__checkbox">
+                  <input
+                    id="agree-checkbox"
+                    type="checkbox"
+                    name="agree-checkbox"
+                  >
+                  <label
+                    class="form__checkbox-lable section__text"
+                    for="agree-checkbox"
+                    >Я согласен(а) с
+                    <a href="#">политикой конфиденциальности</a></label
+                  >
+                </div>
+
+                <button class="link-button link-button--accent form__submit-btn" type="submit">
+                  Отправить сообщение
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

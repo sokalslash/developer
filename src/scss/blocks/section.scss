@@ -1,0 +1,41 @@
+@use "../variables.scss" as var;
+
+.section__subtitle {
+  font-size: 16px;
+}
+
+.section__title {
+  position: relative;
+  margin: 0 0 63px;
+  padding: 0 0 21px;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.67;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: var.$color-accent;
+    transform: translateX(-50%);
+  }
+
+  @media (max-width: var.$breakpoint-small) {
+    margin-bottom: 45px;
+    padding-bottom: 14px;
+    font-size: 24px;
+  }
+}
+
+.section__accent-text {
+  font-size: 14px;
+}
+
+.section__text {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+}

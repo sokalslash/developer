@@ -1,0 +1,37 @@
+@use "../variables.scss" as var;
+
+.section-experience__wrapper {
+  padding-top: 120px;
+}
+
+.section-experience__subtitle {
+  margin: 0 0 7px;
+  text-align: center;
+
+  &.accent-decor::before {
+    left: 48.5%;
+  }
+
+  @media (max-width: var.$breakpoint-small) {
+    margin-bottom: 30px;
+
+    &.accent-decor::before {
+      left: 43.5%;
+    }
+  }
+}
+
+.section-experience__list {
+  display: flex;
+  gap: 130px;
+  padding: 0 72px;
+
+  @media (max-width: var.$breakpoint-medium) {
+    flex-direction: column;
+    gap: 55px;
+  }
+
+  @media (max-width: var.$breakpoint-small) {
+    padding: 0 15px;
+  }
+}
